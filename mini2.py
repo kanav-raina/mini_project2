@@ -21,11 +21,11 @@ class Parent:
       GPIO.output(5,GPIO.LOW)
    
    def sendmail(self,message):
-      fromaddr = "kanavraina98@gmail.com"
-      toaddr = "16bcs020@smvdu.ac.in"
+      fromaddr = "fromaddress@gmail.com"
+      toaddr = "toaddress@gmail.com"
       msg = MIMEMultipart() 
-      msg['From'] = "kanavraina98@gmail.com"
-      msg['To'] = "16bcs020@smvdu.ac.in"
+      msg['From'] = "fromaddress@gmail.com"
+      msg['To'] = "toaddress@gmail.com"
       msg['Subject'] = "Home Security System"
       body =  message
       msg.attach(MIMEText(body, 'plain'))
